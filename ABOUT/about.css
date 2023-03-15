@@ -14,7 +14,10 @@
     background-size: cover;
     font-family: "Montserrat";
 }
-
+.aboutMe{
+  padding-top: 5vh;
+  padding-left: 2vh;
+}
 /*navigational links*/
 .nav-container {
     background-color: rgb(48, 48, 48);
