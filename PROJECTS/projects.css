@@ -14,7 +14,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 2;
     display: grid;
     align-items: center;
   }
@@ -90,44 +90,44 @@
 
 .img{
   position: relative;
-  width: 240px;
-  height: 370px;
-  transition: 0.5s;
+  width: 112px;
+  height: 200px;
+  transition: 0.5s;          
 
 }
 
 .button {
   position: absolute;
-  width: 240px;
-  height: 370px;
+  width: 112px;
+  height: 200px;
   transition: 0.5s;
 }
 
 #slider-span1:target ~ .image-slider #img1,
 #slider-span1:target ~.image-slider #button-1{
-  width:380px;
-  height: 585px;
+  width:  225px;
+  height: 400px;
   background-color: transparent;
 }
 #slider-span2:target ~ .image-slider #img2,
 #slider-span2:target ~.image-slider #button-2{
-  width:380px;
-  height: 585px;
+  width:  225px;
+  height: 400px;
   background-color: transparent;
 }
 #slider-span3:target ~ .image-slider #img3,
 #slider-span3:target ~.image-slider #button-3{
-  width:380px;
-  height: 585px;
+  width:  225px;
+  height: 400px;
   background-color: transparent;
 }
 
 #slider-span1:target ~.image-slider{
-  left:20%;
+  left:11.7%;
 }
 #slider-span2:target ~.image-slider{
   left:0%;
 }
 #slider-span3:target ~.image-slider{
-  left:-20%;
+  left:-11.7%;
 }
