@@ -137,9 +137,9 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 2;
   display: grid;
-
+  align-items: center;
 }
 
 .nav-container ul {
@@ -162,8 +162,7 @@ a {
 }
 .links-container{
   color:white;
-  font-size:2vh;
-  margin-top: 1vh;
+  font-size:1vmax;
 }
 .links-container:hover{
   color:var(--secondary-color);

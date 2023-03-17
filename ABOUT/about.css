@@ -51,7 +51,7 @@
   }
   .links-container{
     color:white;
-    font-size:2vh;
+    font-size:1vmax;
   }
   .links-container:hover{
     color:var(--secondary-color);
