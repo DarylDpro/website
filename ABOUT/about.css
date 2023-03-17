@@ -15,8 +15,8 @@
     font-family: "Montserrat";
 }
 .aboutMe{
-  padding-top: 5vh;
-  padding-left: 2vh;
+  padding-top: 6vh;
+  padding-left: 3vh;
 }
 /*navigational links*/
 .nav-container {
@@ -58,5 +58,7 @@
   }
 
 .aboutMe{
+  text-align: center;
+  align-items: center;
   color:white
 }
