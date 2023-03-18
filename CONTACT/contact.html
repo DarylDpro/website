@@ -19,6 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script><!--Typed.js-->
         <script defer src="/SCRIPTS/IntsnObserver.js"></script><!--intersection observer for animations-->
         <script src="https://kit.fontawesome.com/3b7e1fce44.js" crossorigin="anonymous"></script><!--fontawesome webkit-->
+        <script src="/SCRIPTS/navActive.js"></script><!--for nav link to change color when active-->
     </head>
     <body class="body">
         <!--Navigational links-->
@@ -31,13 +32,50 @@
                     <a href="/ABOUT/about.html" class="links-container">About</a>
                 </li>
                 <li >
-                    <a href="/CONTACT/contact.html" class="links-container">Contact</a>
+                    <a href="/CONTACT/contact.html" class="links-container" id="active">Contact</a>
                 </li>
                 <li>
                     <a href="/PROJECTS/projects.html" class="links-container">Projects</a>
                 </li>
             </ul>
         </div>
-        <p>contact</p>
+        <div>
+        <h1 class="contact">
+            Contact Me
+            </h1>
+         <form>
+            <input type="text" class="input text" id="name">
+            <input type="text" class="input text" id="email">
+            <input type="text" class="input text" id="message">
+         </form>
+        </div>
+
+        <script>
+            var typed = new Typed("#name",{
+                strings:["Name"],
+                typeSpeed: 100,
+                attr:'placeholder',
+                bindInputFocusEvents: true,
+                loop: false,
+            });
+        </script>
+        <script>
+            var typed = new Typed("#email",{
+                strings:["Email"],
+                typeSpeed: 100,
+                attr:'placeholder',
+                bindInputFocusEvents: true,
+                loop: false,
+            });
+        </script>
+        <script>
+            var typed = new Typed("#message",{
+                strings:["Message"],
+                typeSpeed: 100,
+                attr:'placeholder',
+                bindInputFocusEvents: true,
+                loop: false,
+            });
+        </script>
 
     </body>

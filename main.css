@@ -167,4 +167,7 @@ a {
 .links-container:hover{
   color:var(--secondary-color);
 }
+#active {
+  color:var(--secondary-color);
+}
 

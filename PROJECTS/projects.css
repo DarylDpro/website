@@ -44,7 +44,9 @@
   .links-container:hover{
     color:var(--secondary-color);
   }
-
+ #active {
+    color:var(--secondary-color);
+ }
       
 .body{
     background-image: url(/IMAGES/bg.png);
@@ -138,5 +140,6 @@
 #slider-span3:target ~.image-slider{
   left:-11.7%;
 }
+
 
 

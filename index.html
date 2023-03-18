@@ -21,6 +21,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script><!--Typed.js-->
         <script defer src="SCRIPTS/IntsnObserver.js"></script><!--intersection observer for animations-->
         <script src="https://kit.fontawesome.com/3b7e1fce44.js" crossorigin="anonymous"></script><!--fontawesome webkit-->
+        <script src="SCRIPTS\navActive.js"></script><!--for nav link to change color when active-->
     </head>
     
     <body class="body">
@@ -30,7 +31,7 @@
         <div class="nav-container">
             <ul>
                 <li class="links-container">
-                    <a href="\index.html" class="links-container">Home</a>
+                    <a href="\index.html" class="links-container" id="active">Home</a>
                 </li>
                 <li >
                     <a href="ABOUT\about.html" class="links-container">About</a>
@@ -57,7 +58,7 @@
                 typeSpeed: 100,
                 backSpeed:100,
                 loop: true,
-            })
+            });
         </script>
 
         

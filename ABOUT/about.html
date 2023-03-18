@@ -19,6 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script><!--Typed.js-->
         <script defer src="/SCRIPTS/IntsnObserver.js"></script><!--intersection observer for animations-->
         <script src="https://kit.fontawesome.com/3b7e1fce44.js" crossorigin="anonymous"></script><!--fontawesome webkit-->
+        <script src="/SCRIPTS/navActive.js"></script><!--for nav link to change color when active-->
     </head>
 
     <body class="body">
@@ -29,7 +30,7 @@
                     <a href="/index.html" class="links-container">Home</a>
                 </li>
                 <li >
-                    <a href="/ABOUT/about.html" class="links-container">About</a>
+                    <a href="/ABOUT/about.html" class="links-container" id="active">About</a>
                 </li>
                 <li >
                     <a href="/CONTACT/contact.html" class="links-container">Contact</a>
@@ -40,12 +41,12 @@
             </ul>
         </div>
 
-        <div class="aboutMe">
-           <h1><u>About Me</u></h1>
+        <section class="hidden" id="aboutMe">
+           <h1>About Me</h1>
            <p>
-            Hi! Im Daryl, Im 13. a Front-end Dev and Photographer.
+            Hi! Im Daryl, a Front-end Developer and Photographer.
            </p> 
-        </div>
+        </section>
         
     </body>
 </html>

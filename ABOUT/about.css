@@ -56,9 +56,34 @@
   .links-container:hover{
     color:var(--secondary-color);
   }
+  #active {
+    color:var(--secondary-color);
+  }
+  
 
-.aboutMe{
+#aboutMe{
   text-align: center;
   align-items: center;
   color:white
+}
+
+section{
+  color:white;
+  display: grid;
+  place-items: center;
+  align-content:center;
+  min-height: 90vh;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
 }
