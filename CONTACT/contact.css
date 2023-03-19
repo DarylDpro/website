@@ -58,8 +58,35 @@
     background-size: cover;
     font-family: "Montserrat";
 }
-
 .contact{
-  align-self: center;
-  align-items: center;
+  margin-top: 30vh;
+  color:white;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  padding-left: 30vw;
+  padding-right: 30vw;
+ 
+}
+.input text{
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+input[type=text] {
+  color: white;
+  border: none; 
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  cursor: pointer;
+}
+
+input[type=text]:focus {
+  box-shadow:3px solid #555;
 }
