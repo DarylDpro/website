@@ -1,9 +1,13 @@
 var header = document.getElementById("nav-container");
-var links = header.getElementsByTagName("links-container");
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function() {
-    var current = document.getElementById("active");
-    current.removeAttribute("id");
-    this.setAttribute("id", "active");
-  });
+if (header !== null) {
+  var links = header.getElementsByTagName("links-container");
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      if (current.length > 0) {
+        current[0].classList.remove("active");
+      }
+      this.classList.add("active");
+    });
+  }
 }
