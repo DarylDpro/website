@@ -20,19 +20,18 @@
         <script defer src="/SCRIPTS/IntsnObserver.js"></script><!--intersection observer for animations-->
         <script src="https://kit.fontawesome.com/3b7e1fce44.js" crossorigin="anonymous"></script><!--fontawesome webkit-->
         <script src="/SCRIPTS/navActive.js"></script><!--for nav link to change color when active-->
-        <script defer src="/SCRIPTS/hackedText.js"></script><!--hacked text effect-->
     </head>
     <body class="body">
         <!--Navigational links-->
         <div class="nav-container">
             <ul>
-                <li class="links-container">
+                <li>
                     <a href="/index.html" class="links-container">Home</a>
                 </li>
-                <li >
+                <li>
                     <a href="/ABOUT/about.html" class="links-container">About</a>
                 </li>
-                <li >
+                <li>
                     <a href="/CONTACT/contact.html" class="links-container" id="active">Contact</a>
                 </li>
                 <li>
@@ -40,10 +39,10 @@
                 </li>
             </ul>
         </div>
-        <div>
-        <h1 data-value="Contact Me" class="contact">
-            Contact Me
-            </h1>
+
+        <h1 class="contactMe"><span id="Contact-Me"></span></h1>
+
+        <div class="Forms">
          <form>
             <input type="text" class="input text" id="name">
             <input type="text" class="input text" id="email">
@@ -84,6 +83,13 @@
                 strings:["Send"],
                 typeSpeed: 100,
                 bindInputFocusEvents: true,
+                loop: false,
+            });
+        </script>
+        <script>
+            var typed= new Typed(".Contact-Me", {
+                strings:["Contact Me"],
+                typeSpeed: 100,
                 loop: false,
             });
         </script>

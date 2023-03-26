@@ -20,20 +20,19 @@
         <script defer src="/SCRIPTS/IntsnObserver.js"></script><!--intersection observer for animations-->
         <script src="https://kit.fontawesome.com/3b7e1fce44.js" crossorigin="anonymous"></script><!--fontawesome webkit-->
         <script src="/SCRIPTS/navActive.js"></script><!--for nav link to change color when active-->
-        <script defer src="/SCRIPTS/hackedText.js"></script><!--hacked text effect-->
     </head>
 
     <body class="body">
         <!--Navigational links-->
         <div class="nav-container">
             <ul>
-                <li class="links-container">
+                <li>
                     <a href="/index.html" class="links-container">Home</a>
                 </li>
-                <li >
+                <li>
                     <a href="/ABOUT/about.html" class="links-container" id="active">About</a>
                 </li>
-                <li >
+                <li>
                     <a href="/CONTACT/contact.html" class="links-container">Contact</a>
                 </li>
                 <li>
@@ -41,14 +40,23 @@
                 </li>
             </ul>
         </div>
-        
 
-        <section class="hidden" id="aboutMe">
-           <h1 data-value="About Me">About Me</h1>
-           <p>
-            Hi! Im Daryl, a Front-end Developer and Photographer.
+        <section class="aboutMe">
+           <h1 class="amHeader">
+            <span class="About-Me"></span>
+           </h1>
+           <p class="dpara" id="hidden">
+            <span>Hi! Im Daryl, a Front-end Developer and Photographer.</span>
            </p> 
         </section>
+
+        <script>
+            var typed= new Typed(".About-Me", {
+                strings:["About Me"],
+                typeSpeed: 100,
+                loop: false,
+            });
+        </script>
         
     </body>
 </html>
