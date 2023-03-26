@@ -5,7 +5,7 @@
 .purple-detail{
   color: var( --secondary-color);
 }
-
+/*body*/
 .body{
     background-image: url(IMAGES/bg.png);
     background-repeat: no-repeat;
@@ -13,29 +13,25 @@
     overflow: hidden;
     background-size: cover;
     font-family: "Montserrat";
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
 }
-.auto-type{
-    color: white;
-    font-family:'Montserrat';
-    font-weight:800;
-    font-size: 4vh;
+/*welcome and desc*/
+.Welcome{
+  font-size: 2vh;
+  color:white;
+  display: grid;
+  place-items: center;
+  align-content:center;
+  min-height: 91vh;
 }
-.description1{
-    color: white;
-    font-family:'Montserrat';
-    font-weight:400;
-    text-align: center;
-    font-size: 2vh;
-}
-/*glide in left animation*/
-section{
-    color:white;
-    display: grid;
-    place-items: center;
-    align-content:center;
-    min-height: 90vh;
+#description{
+  font-size: 2vh;
+  font-weight: 400;
 }
 
+/*glide in from left animation*/
 .hidden{
     opacity: 0;
     filter: blur(10px);
@@ -60,6 +56,7 @@ noscript{
   margin-top: 10px;
 }
 
+/*footer*/
 .footer{
   text-align: center;
   max-width: 100vw;
@@ -67,22 +64,27 @@ noscript{
 }
 
 
-/*social icons*/
-.sIlist{
+/* Social icons */
+.sIlist {
+  position: relative;
   color: transparent;
   opacity: 1;
   text-align: center;
+  z-index: 5;  
+  display: inline-block;
+  margin-right: 1.5vw;
+  margin-bottom: -10px;
 }
+
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
 }
- 
+
 .sIlist i {
   opacity: 1;
   animation: fade-in 3s forwards;
 }
-
 
 a {
   background-color: transparent;
@@ -90,43 +92,20 @@ a {
 }
 
 .socialIcons {
-  opacity:0;
-  color: var(--base-color);
-  font-size: 1.5vw;
   opacity: 1;
-  padding-bottom:100px;
+  color: #000; /* Replace with your desired base color */
+  font-size: 1.5vw;
+  padding-bottom: 95px; /* Adjust as needed */
   z-index: 1;
 }
 
-
-.sIlist {
-  display: inline-block;
-  margin-right: 1.5vw;
+.fa-discord:hover,
+.fa-instagram:hover,
+.fa-spotify:hover,
+.fa-github:hover,
+.fa-codepen:hover {
+  color:var(--secondary-color); /* Replace with your desired secondary color */
 }
-
-
-.fa-discord:hover{
-  color: var(--secondary-color);
-}
-
-.fa-instagram:hover{
-  color: var(--secondary-color);
-}
-
-.fa-spotify:hover{
-  color: var(--secondary-color);
-}
-
-.fa-github:hover{
-  color: var(--secondary-color);
-}
-
-.fa-codepen:hover{
-  color: var(--secondary-color);
-}
-
-
-
 
 
 /*navigational links*/
@@ -137,20 +116,21 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
-  display: grid;
+  z-index: 10;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-container ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-container ul li {
-  display: inline-block;
   margin: 0 10px;
 }
 
@@ -159,15 +139,15 @@ a {
   padding: 10px 20px;
   color: white;
   text-decoration: none;
+  font-size: 1vmax;
+  font-weight: 400;
 }
-.links-container{
-  color:white;
-  font-size:1vmax;
+
+.nav-container ul li a:hover {
+  color: var(--secondary-color);
 }
-.links-container:hover{
-  color:var(--secondary-color);
-}
-#active {
-  color:var(--secondary-color);
+
+.nav-container #active {
+  color: var(--secondary-color);
 }
 
