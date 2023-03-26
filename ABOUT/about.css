@@ -1,10 +1,10 @@
 :root{
-    --primary-color:white;
-    --secondary-color: #d2d0ff;
+  --primary-color:white;
+  --secondary-color: #d2d0ff;
   }
-  .purple-detail{
-    color: var( --secondary-color);
-  }
+.purple-detail{
+  color: var( --secondary-color);
+}
   
 .body{
     background-image: url(/IMAGES/bg.png);
@@ -13,53 +13,49 @@
     overflow: hidden;
     background-size: cover;
     font-family: "Montserrat";
+    font-weight: 400;
 }
-.aboutMe{
-  padding-top: 6vh;
-  padding-left: 3vh;
-}
-/*navigational links*/
 .nav-container {
-    background-color: rgb(48, 48, 48);
-    height: 8vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: grid;
-    align-items: center;
-  }
-  
-  .nav-container ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
-  
-  .nav-container ul li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .nav-container ul li a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-  }
-  .links-container{
-    color:white;
-    font-size:1vmax;
-  }
-  .links-container:hover{
-    color:var(--secondary-color);
-  }
-  #active {
-    color:var(--secondary-color);
-  }
-  
+  background-color: rgb(48, 48, 48);
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: grid;
+  align-items: center;
+}
+
+.nav-container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-container ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-container ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+.links-container{
+  color:white;
+  font-size:1vmax;
+}
+.links-container:hover{
+  color:var(--secondary-color);
+}
+#active {
+  color:var(--secondary-color);
+}
+
 
 .aboutMe{
   font-size: 2.2vh;
@@ -67,8 +63,8 @@
   display: grid;
   place-items: center;
   align-content:center;
-  min-height: 90vh;
   overflow: hidden;
+  min-height: 89vh;
 }
 .About-Me{
   overflow: hidden;
@@ -76,21 +72,25 @@
 
 .amHeader span{
   display: block;
-  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  animation: reveal 1s;
+  
 }
 .dpara{
   overflow: hidden;
+  font-size: 2vh;
+  font-weight: 400;
 }
 .dpara span{
   display: block;
-  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  animation: reveal 1s;
 }
 @keyframes reveal {
   from {
+    opacity: 0;
     transform: translate(0,100%); /*edit this line to change direction of text reveal*/
   }
   to {
-    opacity: 100;
+    opacity: 1;
     transform: translate(0,0);
   }
 }
