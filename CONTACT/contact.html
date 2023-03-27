@@ -40,17 +40,21 @@
             </ul>
         </div>
 
-        <h1 class="contactMe"><span id="Contact-Me"></span></h1>
 
-        <div class="Forms">
-         <form>
-            <input type="text" class="input text" id="name">
-            <input type="text" class="input text" id="email">
-            <input type="text" class="input text" id="message">
-            <input type="submit" class="input submit" id="submit">
-         </form>
+        <!--Contact Me-->
+        <div class="formContainer hidden">
+          <h1 class="contactMe"><span id="Contact-Me"></span></h1>
+          <div class="Forms">
+             <form>
+                 <input type="text" class="input text" id="name">
+                 <input type="text" class="input text" id="email">
+                 <input type="text" class="input text" id="message">
+                 <button type="submit" class="input submit" id="submit"><i class="fa-solid fa-paper-plane" style="color: var(--secondary-color)";></i></button>
+             </form>
+         </div>
         </div>
 
+        <!--typewriter effect for contact me forms-->
         <script>
             var typed = new Typed("#name",{
                 strings:["Name"],
@@ -79,15 +83,7 @@
             });
         </script>
         <script>
-            var typed = new Typed("#submit",{
-                strings:["Send"],
-                typeSpeed: 100,
-                bindInputFocusEvents: true,
-                loop: false,
-            });
-        </script>
-        <script>
-            var typed= new Typed(".Contact-Me", {
+            var typed= new Typed("#Contact-Me", {
                 strings:["Contact Me"],
                 typeSpeed: 100,
                 loop: false,
@@ -95,3 +91,4 @@
         </script>
 
     </body>
+</html>
