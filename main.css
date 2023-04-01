@@ -24,9 +24,10 @@
   display: grid;
   place-items: center;
   align-content:center;
-  min-height:91vh;
+  min-height:98vh;
 }
 #description{
+  text-align: center;
   font-size: 2vh;
   font-weight: 400;
 }
@@ -73,7 +74,6 @@ noscript{
   z-index: 5;  
   display: inline-block;
   margin-right: 1.5vw;
-  margin-bottom: -10px;
 }
 
 @keyframes fade-in {
