@@ -27,9 +27,9 @@
   min-height:98vh;
 }
 #description{
-  text-align: center;
   font-size: 2vh;
   font-weight: 400;
+  text-align: center;
 }
 
 /*glide in from left animation*/
@@ -52,7 +52,6 @@ noscript{
   position: relative;
   color:white;
   font-size: 2vh;
-  z-index: 10000;
   text-align: center;
   margin-top: 10px;
 }
@@ -67,13 +66,11 @@ noscript{
 
 /* Social icons */
 .sIlist {
-  position: relative;
-  color: transparent;
-  opacity: 1;
-  text-align: center;
-  z-index: 5;  
-  display: inline-block;
-  margin-right: 1.5vw;
+  display: block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 @keyframes fade-in {
@@ -92,11 +89,11 @@ a {
 }
 
 .socialIcons {
-  opacity: 1;
-  color: #000; /* Replace with your desired base color */
-  font-size: 1.5vw;
-  padding-bottom: 95px; /* Adjust as needed */
-  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 48.9%;
+  transform: translateX(-50%);
+  display: flex;
 }
 
 .fa-discord:hover,
@@ -136,14 +133,14 @@ a {
   
   .nav-container ul li a {
     display: block;
-    padding: 10px 20px;
+    padding: 1vh 2vw;
     color: white;
     text-decoration: none;
   }
   
   .links-container {
     color: white;
-    font-size: 1vmax;
+    font-size: 0.9rem;
   }
   
   .links-container:hover {
