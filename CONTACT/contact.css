@@ -56,6 +56,7 @@
     overflow: hidden;
     background-size: cover;
     font-family: "Montserrat";
+    position: fixed;
     padding: 0;
     margin: 0;
 }
@@ -67,34 +68,34 @@
   margin:0;
 
 }
-
-.input text{
-  padding-top: 1vh;
-  padding-bottom: 1vh; 
-  border-radius: 10px;
-}
-#name{
-  color: var(--secondary-color);
+.formContainer{
+  text-align: center;
 }
 .Forms{
-  max-width: 500px;
+  max-width: 35rem;
   margin: auto;
   overflow: hidden;
 }
+
+
 .hidden{
   opacity: 0;
   filter: blur(10px);
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: all 1s;
 }
 
 .show{
   opacity: 1;
   filter: blur(0px);
-  transform: translateX(0);
+  transform: translateX(100%);
 }
 
-
+.input text{ 
+  padding-top: 1vh;
+  padding-bottom: 1vh; 
+  border-radius: 10px;
+}
 
 input[type=text] {
   background-color: rgb(49, 49, 49);
