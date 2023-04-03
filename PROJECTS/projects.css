@@ -71,10 +71,10 @@
   transform: translate(-50%, -50%);
 }
 .noProj{
-  animation: reveal 1.5s;
+  animation: reveal 2s;
 }
 .noProj2{
-  animation: reveal 1.5s;
+  animation: reveal 2s;
 }
 @keyframes reveal {
   from {

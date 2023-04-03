@@ -73,7 +73,7 @@
 
 .amHeader span{
   display: block;
-  animation: reveal 1s;
+  animation: reveal 2s;
   
 }
 .dpara{
@@ -83,7 +83,7 @@
 }
 .dpara span{
   display: block;
-  animation: reveal 1s;
+  animation: reveal 2s;
 }
 @keyframes reveal {
   from {
