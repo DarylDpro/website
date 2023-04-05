@@ -45,11 +45,14 @@
         <div class="formContainer hidden">
           <h1 class="contactMe"><span id="Contact-Me"></span></h1>
           <div class="Forms">
-             <form>
+             <form action="https://formsubmit.co/daryltaykongzhi@gmail.com" method="POST">
                  <input type="text" class="input text" id="name">
                  <input type="text" class="input text" id="email">
                  <input type="text" class="input text" id="message">
-                 <button type="submit" class="input submit" id="submit"><i class="fa-solid fa-paper-plane" style="color: var(--secondary-color)";></i></button>
+                 <button type="submit" class="input submit" id="submit" target="_blank"><i class="fa-solid fa-paper-plane" style="color: var(--secondary-color)";></i></button>
+                 <input type="hidden" name="_next" value="http://localhost:3000/CONTACT/thanks">
+                 <input type="hidden" name="_captcha" value="false">
+                 <input type="hidden" name="_subject" value="New message from daryl.rf.gd">
              </form>
          </div>
         </div>

@@ -61,76 +61,29 @@
     margin: 0;
 }
 
-
-.formContainer{
-  top: 30%;
-  left: -3.7%;
-  position: fixed;
-}
-
-.contactMe{
-  text-align: center;
-}
-
-
-
-.hidden{
-  opacity: 0;
-  filter: blur(10px);
-  transform: translateX(200%);
-  transition: all 2s;
-}
-
-.show{
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateX(100%);
-}
-
-.input text{ 
-  padding-top: 1vh;
-  padding-bottom: 1vh; 
-  border-radius: 10px;
-}
-
-input[type=text] {
-  background-color: rgb(49, 49, 49);
-  color: var(--secondary-color);
-  position: relative;
-  display: block;
-  width: 36vw;
-  box-sizing: border-box;
-  margin: 16px 0;
-  border: 0;
-  border-radius: 10px;
-  padding: 2vh 2vh;
-  opacity: 0.8;
-}
-
-button [type=submit] {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 10px;
-}
-
-button [type=submit]:hover {
-  color: black;
-}
-.submit{
-  background-color:rgb(49, 49, 49) ;
-}
-
 .thankYou{
-  position: fixed;
-  top:40%;
-  text-align: center;
-  left:46%
+    position: fixed;
+    top:40%;
+    text-align: center;
+    left:46%
 }
 .formSuccess{
-  font-size: 2vh;
-  font-weight: 400;
-  position: fixed;
-  top: 50%;
-  left:41%
+    font-size: 2vh;
+    font-weight: 400;
+    position: fixed;
+    top: 50%;
+    left:41%
 }
+
+.hidden{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(100%);
+    transition: all 2s;
+  }
+  
+  .show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+  }
