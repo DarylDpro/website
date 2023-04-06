@@ -62,17 +62,19 @@
 }
 
 .thankYou{
+    color:white;
     position: fixed;
     top:40%;
     text-align: center;
-    left:46%
+    left:44%
 }
 .formSuccess{
+    color:white;
     font-size: 2vh;
     font-weight: 400;
     position: fixed;
     top: 50%;
-    left:41%
+    left:39.5%
 }
 
 .hidden{
